@@ -1,0 +1,117 @@
+.container {
+    width: 86vw;
+    height: 100vh;
+    background-image: linear-gradient(-45deg, rgba(255,0,0,0.4) 70%, rgba(255,255,0,0.4));
+    font-family: Montserrat;
+    position: relative;
+    overflow: hidden;
+}
+
+/* .container::before {
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .5;
+    background-image: radial-gradient(circle at 120.44% 43.84%, #ffc100 0, #ffb200 8.33%, #ffa014 16.67%, #ff8c2a 25%, #ff7638 33.33%, #ff5e41 41.67%, #f94646 50%, #e12e49 58.33%, #cb164b 66.67%, #b7004e 75%, #a60052 83.33%, #970056 91.67%, #8a005c 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    position: absolute;
+} */
+
+.about {
+    position: absolute;
+    font-size: 300px;
+    font-weight: 900;
+    color: rgba(0, 0, 0, .2);
+    transform: rotate(-5deg);
+    left: -80px;
+    top: -100px;
+    z-index: -1;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.photo {
+    border: 8px solid white;
+    width: 200px;
+    height: 200px;
+}
+
+.photo img {
+    width: 200px;
+}
+
+.first {
+    display: flex;
+    align-items: center;
+}
+
+.lineFirst {
+    margin-left: 40px;
+}
+
+.lineFirst span {
+    color: white;
+}
+
+.lineFirst > span:first-child {
+    font-size: 26px;
+    opacity: .4;
+}
+
+.lineFirst >span:last-child {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.cloud {
+    position: absolute;
+    right: -80px;
+    bottom: -80px;
+    opacity: .2;
+    transform: rotate(-30deg);
+    z-index: -1;
+}
+
+.parrafo {
+    width: 84%;
+    margin-top: 30px;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    z-index: 2;
+}
+
+.hobby {
+    display: flex;
+}
+
+.hobby img {
+    width: 120px;
+    margin: 0 10px;
+    filter: drop-shadow(2px 2px 15px rgba(0, 0, 0, 0.7));
+}
+
+.hob {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.title {
+    color: white;
+    margin: 35px 0;
+    font-size: 20px;
+}

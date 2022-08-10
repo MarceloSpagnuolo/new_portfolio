@@ -1,0 +1,18 @@
+.container {
+    background-image: linear-gradient(225deg, rgba(255,0,0,0.4) 70%, rgba(255,255,0,0.4));
+    width: 86vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    font-family: Montserrat;
+}
+
+.employment {
+    font-size: 140px;
+    font-weight: 700;
+    position: absolute;
+    transform: rotate(-80deg);
+    opacity: .3;
+    left: -400px;
+    bottom: 400px;
+}

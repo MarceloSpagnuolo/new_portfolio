@@ -1,0 +1,32 @@
+<div class="container">
+  <img src="../../assets/logo.png" alt="logo" class="logo"/>
+  <div class="title">
+    <span>PORTFOLIO</span>
+  </div>
+  <div class="menu">
+    <div class="link">
+      <a href=""><div [ngClass]="currentRoute=='/' ? 'item x' : 'item'">home</div></a>
+    </div>
+    <div class="link">
+      <a href="/about"><div [ngClass]="currentRoute=='/about' ? 'item x' : 'item'">about me</div></a>
+    </div>
+    <div class="link">
+      <a href="/skills"><div [ngClass]="currentRoute=='/skills' ? 'item x' : 'item'">skills</div></a>
+    </div>
+    <div class="link">
+      <a href="/projects"><div [ngClass]="currentRoute=='/projects' ? 'item x' : 'item'">projects</div></a>
+    </div>
+    <div class="link">
+      <a href="/employment"><div [ngClass]="currentRoute=='/employment' ? 'item x' : 'item'">employment</div></a>
+    </div>
+    <div class="link">
+      <a href="/contact"><div [ngClass]="currentRoute=='/contact' ? 'item x' : 'item'">contact</div></a>
+    </div>
+  </div>
+  <div class="social">
+    <img src="../../assets//linkedin.png" alt="in" />
+    <img src="../../assets//github_menu.png" alt="github" />
+    <img src="../../assets/email.png" alt="email" />
+    <img src="../../assets/ws.png" alt="ws" />
+  </div>
+</div>
