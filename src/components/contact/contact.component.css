@@ -1,0 +1,77 @@
+.container {
+    width: 86vw;
+    height: 100vh;
+    background-image: linear-gradient(90deg, rgba(255,0,0,0.4)  60%, rgba(255,255,0,0.4));
+    font-family: Montserrat;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact {
+    font-size: 300px;
+    font-weight: 700;
+    opacity: 0.2;
+    transform: rotate(-3deg);
+    position: absolute;
+    top: -140px;
+    z-index: -1;
+}
+
+.content {
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.formulario input {
+    font-size: 20px;
+    padding: 10px 20px;
+    width: calc(100% - 40px);
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.formulario textarea {
+    font-size: 20px;
+    padding: 10px 20px;
+    width: calc(100% - 40px);
+    margin-bottom: 60px;
+    border-radius: 5px;
+}
+
+.formulario button {
+    font-size: 20px;
+    padding: 7px 0;
+    width: 100%;
+    background-color: cornflowerblue;
+    color: white;
+    border: 0;
+    box-shadow: 5px 5px 10px black;
+    transition: all 0.5s;
+    border-radius: 5px;
+}
+
+.formulario button:hover {
+    cursor: pointer;
+    transform: scale(0.99);
+    box-shadow: 2px 2px 5px black;
+    transition: all 0.5s;
+}
+
+.nube {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+    transform: rotate(8deg);
+    left: -100px;
+    bottom: -150px;
+}

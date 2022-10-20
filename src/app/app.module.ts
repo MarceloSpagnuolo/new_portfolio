@@ -11,15 +11,21 @@ import { AppComponent } from './app.component';
 import { ContactComponent } from 'src/components/contact/contact.component';
 import { RouterModule, Routes } from '@angular/router';
 import { EmploymentComponent } from 'src/components/employment/employment.component';
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+import { CardComponent } from 'src/components/projects/card/card.component';
+import { CommonModule } from '@angular/common';
 
-const appRoutes:Routes=[
-  {path:"", component:HomeComponent},
-  {path:"about", component:AboutComponent},
-  {path:"skills", component:SkillsComponent},
-  {path:"projects", component:ProjectsComponent},
-  {path:"employment", component:EmploymentComponent},
-  {path:"contact", component:ContactComponent}
-]
+const appRoutes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'skills', component: SkillsComponent },
+  { path: 'projects', component: ProjectsComponent },
+  { path: 'employment', component: EmploymentComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: '**', redirectTo: '/home' },
+];
 
 @NgModule({
   declarations: [
@@ -29,14 +35,19 @@ const appRoutes:Routes=[
     AboutComponent,
     SkillsComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FormsModule,
+    BrowserAnimationsModule,
+    MatSliderModule,
+    CommonModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

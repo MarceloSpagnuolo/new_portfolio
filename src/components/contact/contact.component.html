@@ -1,3 +1,14 @@
-<p>
-  contact works!
-</p>
+<div class="container">
+  <span class="contact">contact</span>
+  <img src="../../assets//nube4.png" class="nube" />
+  <div class="content">
+    <form class="formulario">
+      <input type="text" name="name" placeholder="Name" [(ngModel)]="contact.name" />
+      <input type="email" name="email" placeholder="Email" [(ngModel)]="contact.email" />
+      <input type="phone" name="phone" placeholder="Phone" [(ngModel)]="contact.phone" />
+      <input type="text" name="subject" placeholder="Subject" [(ngModel)]="contact.subject" />
+      <textarea rows="6" name="message" placeholder="Your message" [(ngModel)]="contact.message"></textarea>
+      <button type="submit" (click)="send">Enviar</button>
+    </form>
+  </div>
+</div>

@@ -1,75 +1,124 @@
 .container {
-    width: 86vw;
-    height: 100vh;
-    background-image: url("../../assets/yo.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 43vw bottom;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    font-family: Montserrat;
-    overflow: hidden;
+  width: 86vw;
+  height: 100vh;
+  background-image: url("../../assets/yo.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 43vw bottom;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  overflow: hidden;
 }
 
 .red {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(255, 0, 0, 0.4);
-    width: 60vw;
-    height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 0, 0, 0.4);
+  width: 0vw;
+  height: 100vh;
+  animation: redAnim 40s infinite linear;
 }
 
 .yellow {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: rgba(255,255,0,0.4);
-    width: 26vw;
-    height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 255, 0, 0.4);
+  width: 86vw;
+  height: 100vh;
+  animation: yellowAnim 40s infinite linear;
 }
 
 .text {
-    z-index: 5;
-    color: white;
-    text-align: center;
-    margin-top: 150px;
+  z-index: 5;
+  color: white;
+  text-align: center;
+  margin-top: 150px;
 }
 
 .text span:first-child {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .text span:nth-child(3) {
-    font-size: 60px;
-    font-weight: 700;
+  font-size: 60px;
+  font-weight: 700;
 }
 
 .text span:last-child {
-    background-color: black;
-    color: red;
-    font-size: 24px;
-    letter-spacing: 10px;
-    padding: 5px 40px;
+  background-color: black;
+  color: red;
+  font-size: 24px;
+  letter-spacing: 10px;
+  padding: 5px 40px;
 }
 
 .home {
-    position: absolute;
-    font-size: 350px;
-    font-weight: 900;
-    top: -20px;
-    right: 650px;
-    color: rgba(0,0,0,0.2);
-    transform: rotate(10deg);
+  position: absolute;
+  font-size: 350px;
+  font-weight: 900;
+  top: -20px;
+  right: 650px;
+  color: rgba(0, 0, 0, 0.2);
+  transform: rotate(10deg);
+  animation: homeAnim 40s infinite linear;
 }
 
 .cloud {
-    position: absolute;
-    z-index: -1;
-    left: -120px;
-    bottom: -80px;
-    transform: rotate(-10deg);
-    opacity: .1;
+  position: absolute;
+  z-index: -1;
+  left: -120px;
+  bottom: -80px;
+  transform: rotate(-10deg);
+  opacity: 0.15;
+}
+
+.title {
+  text-shadow: 0 0 8px rgba(255, 0, 0, 0.4);
+}
+
+@keyframes redAnim {
+  0% {
+    width: 0vw;
+  }
+  50% {
+    width: 86vw;
+  }
+  100% {
+    width: 0vw;
+  }
+}
+
+@keyframes yellowAnim {
+  0% {
+    width: 86vw;
+  }
+  50% {
+    width: 0vw;
+  }
+  100% {
+    width: 86vw;
+  }
+}
+
+@keyframes homeAnim {
+  0% {
+    top: -20px;
+    right: 650px;
+    transform: rotate(10deg);
+  }
+  50% {
+    top: 200px;
+    right: 100px;
+    transform: rotate(-50deg);
+  }
+  100% {
+    top: -20px;
+    right: 650px;
+    transform: rotate(10deg);
+  }
 }

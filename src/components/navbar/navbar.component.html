@@ -1,32 +1,70 @@
 <div class="container">
-  <img src="../../assets/logo.png" alt="logo" class="logo"/>
+  <img src="../../assets/logo.png" alt="logo" class="logo" />
   <div class="title">
     <span>PORTFOLIO</span>
   </div>
   <div class="menu">
     <div class="link">
-      <a href=""><div [ngClass]="currentRoute=='/' ? 'item x' : 'item'">home</div></a>
+      <a href=""
+        ><div [ngClass]="currentRoute == '/' ? 'item x' : 'item'">home</div></a
+      >
     </div>
     <div class="link">
-      <a href="/about"><div [ngClass]="currentRoute=='/about' ? 'item x' : 'item'">about me</div></a>
+      <a href="/about"
+        ><div [ngClass]="currentRoute == '/about' ? 'item x' : 'item'">
+          about me
+        </div></a
+      >
     </div>
     <div class="link">
-      <a href="/skills"><div [ngClass]="currentRoute=='/skills' ? 'item x' : 'item'">skills</div></a>
+      <a href="/skills"
+        ><div [ngClass]="currentRoute == '/skills' ? 'item x' : 'item'">
+          skills
+        </div></a
+      >
     </div>
     <div class="link">
-      <a href="/projects"><div [ngClass]="currentRoute=='/projects' ? 'item x' : 'item'">projects</div></a>
+      <a href="/projects"
+        ><div [ngClass]="currentRoute == '/projects' ? 'item x' : 'item'">
+          projects
+        </div></a
+      >
     </div>
     <div class="link">
-      <a href="/employment"><div [ngClass]="currentRoute=='/employment' ? 'item x' : 'item'">employment</div></a>
+      <a href="/employment"
+        ><div [ngClass]="currentRoute == '/employment' ? 'item x' : 'item'">
+          employment
+        </div></a
+      >
     </div>
     <div class="link">
-      <a href="/contact"><div [ngClass]="currentRoute=='/contact' ? 'item x' : 'item'">contact</div></a>
+      <a href="/contact"
+        ><div [ngClass]="currentRoute == '/contact' ? 'item x' : 'item'">
+          contact
+        </div></a
+      >
     </div>
   </div>
   <div class="social">
-    <img src="../../assets//linkedin.png" alt="in" />
-    <img src="../../assets//github_menu.png" alt="github" />
-    <img src="../../assets/email.png" alt="email" />
-    <img src="../../assets/ws.png" alt="ws" />
+    <a
+      href="https://www.linkedin.com/in/marcelo-spagnuolo-97459265/"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <img src="../../assets//linkedin.png" alt="in" />
+    </a>
+    <a
+      href="https://github.com/MarceloSpagnuolo"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <img src="../../assets//github_menu.png" alt="github" />
+    </a>
+    <a href="mailto:lu4huf@gmail.com">
+      <img src="../../assets/email.png" alt="email" />
+    </a>
+    <a href="https://wa.me/+543516185440" target="_blank" rel="noreferrer">
+      <img src="../../assets/ws.png" alt="ws" />
+    </a>
   </div>
 </div>
