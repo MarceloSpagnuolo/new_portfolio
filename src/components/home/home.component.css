@@ -1,5 +1,5 @@
 .container {
-  width: 86vw;
+  width: 100%;
   height: 100vh;
   background-image: url("../../assets/yo.jpg");
   background-repeat: no-repeat;
@@ -83,25 +83,25 @@
 
 @keyframes redAnim {
   0% {
-    width: 0vw;
+    width: 0%;
   }
   50% {
-    width: 86vw;
+    width: 100%;
   }
   100% {
-    width: 0vw;
+    width: 0%;
   }
 }
 
 @keyframes yellowAnim {
   0% {
-    width: 86vw;
+    width: 100%;
   }
   50% {
-    width: 0vw;
+    width: 0%;
   }
   100% {
-    width: 86vw;
+    width: 100%;
   }
 }
 

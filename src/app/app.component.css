@@ -1,3 +1,15 @@
 .container {
-    display:flex;
+  width: 100vw;
+  display: flex;
+}
+
+.router {
+  width: 100%;
+}
+
+.noapto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }

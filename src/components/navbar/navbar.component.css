@@ -11,11 +11,6 @@
   position: sticky;
 }
 
-.container img {
-  width: 8vw;
-  margin-bottom: 20px;
-}
-
 .title {
   font-size: 30px;
   margin-bottom: 80px;
@@ -42,6 +37,8 @@
 }
 
 .logo {
+  width: 150px;
+  margin-bottom: 20px;
   z-index: 5;
 }
 

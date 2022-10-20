@@ -63,3 +63,32 @@
   padding: 20px;
   z-index: -1;
 }
+
+p {
+  margin: 10px 0;
+}
+
+.buttons {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.boton {
+  padding: 10px 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(239, 108, 2);
+  color: white;
+  box-shadow: 0 0 10px black;
+  transition: 0.5s;
+}
+
+.boton:hover {
+  cursor: pointer;
+  box-shadow: none;
+  transition: all 0.5s;
+  transform: scale(0.9);
+}
