@@ -5,36 +5,26 @@
   </div>
   <div class="menu">
     <div class="link">
-      <a href=""
-        ><div [ngClass]="currentRoute == '/' ? 'item x' : 'item'">home</div></a
+      <a
+        routerLink=""
+        routerLinkActive="x"
+        class="item"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >home</a
       >
     </div>
     <div class="link">
-      <a href="/about"
-        ><div [ngClass]="currentRoute == '/about' ? 'item x' : 'item'">
-          about me
-        </div></a
-      >
+      <a routerLink="/about" routerLinkActive="x" class="item">about me</a>
     </div>
     <div class="link">
-      <a href="/skills"
-        ><div [ngClass]="currentRoute == '/skills' ? 'item x' : 'item'">
-          skills
-        </div></a
-      >
+      <a routerLink="/skills" routerLinkActive="x" class="item">skills</a>
     </div>
     <div class="link">
-      <a href="/projects"
-        ><div [ngClass]="currentRoute == '/projects' ? 'item x' : 'item'">
-          projects
-        </div></a
-      >
+      <a routerLink="/projects" routerLinkActive="x" class="item">projects</a>
     </div>
     <div class="link">
-      <a href="/employment"
-        ><div [ngClass]="currentRoute == '/employment' ? 'item x' : 'item'">
-          employment
-        </div></a
+      <a routerLink="/employment" routerLinkActive="x" class="item"
+        >employment</a
       >
     </div>
   </div>
